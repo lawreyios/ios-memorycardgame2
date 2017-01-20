@@ -84,7 +84,7 @@ class FCGameBoardCollectionViewController: UIViewController, UICollectionViewDel
 
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return cardManager.currentActiveDeck.count
+        return 9
     }
     
     
@@ -96,27 +96,29 @@ class FCGameBoardCollectionViewController: UIViewController, UICollectionViewDel
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        if currentGameState == .NotPlaying {
-            currentGameState = .Playing
-            startTimer()
-            btnReset.setTitle("Stop", for: .normal)
-        }
-        if !cardManager.currentActiveChosenCardsIdx.contains(indexPath) && !cardManager.flippedCards.contains(indexPath){
-            //showPopupWithStyle(.centered)
-            let cell = collectionView.cellForItem(at: indexPath) as! FCGameCardCollectionViewCell
-            let card = cardManager.currentActiveDeck[indexPath.row]
-            if cardManager.currentActiveChosenCards.count <= 1 {
-                if cardManager.currentActiveChosenCards.count == 1 {
-                    if cardManager.currentActiveChosenCards[0].cardId != card.cardId {
-                        cell.flipCardAnimation(indexPath: indexPath)
-                        cardManager.selectCard(card: card, indexPath: indexPath)
-                    }
-                }else{
-                    cell.flipCardAnimation(indexPath: indexPath)
-                    cardManager.selectCard(card: card, indexPath: indexPath)
-                }
-            }
-        }
+        let cell = collectionView.cellForItem(at: indexPath) as! FCGameCardCollectionViewCell
+        cell.flipCardAnimation(indexPath: indexPath)
+//        if currentGameState == .NotPlaying {
+//            currentGameState = .Playing
+//            startTimer()
+//            btnReset.setTitle("Stop", for: .normal)
+//        }
+//        if !cardManager.currentActiveChosenCardsIdx.contains(indexPath) && !cardManager.flippedCards.contains(indexPath){
+//            //showPopupWithStyle(.centered)
+//            let cell = collectionView.cellForItem(at: indexPath) as! FCGameCardCollectionViewCell
+//            let card = cardManager.currentActiveDeck[indexPath.row]
+//            if cardManager.currentActiveChosenCards.count <= 1 {
+//                if cardManager.currentActiveChosenCards.count == 1 {
+//                    if cardManager.currentActiveChosenCards[0].cardId != card.cardId {
+//                        cell.flipCardAnimation(indexPath: indexPath)
+//                        cardManager.selectCard(card: card, indexPath: indexPath)
+//                    }
+//                }else{
+//                    cell.flipCardAnimation(indexPath: indexPath)
+//                    cardManager.selectCard(card: card, indexPath: indexPath)
+//                }
+//            }
+//        }
     }
     
     func onMatch() {

@@ -48,7 +48,7 @@ class FCGameCardCollectionViewCell: UICollectionViewCell {
         
         let transitionOptions = UIViewAnimationOptions.transitionFlipFromLeft
         
-        UIView.transition(with: self.contentView, duration: 0.5, options: transitionOptions, animations: {
+        UIView.transition(with: self.contentView, duration: 3, options: transitionOptions, animations: {
             
             self.cardViews!.backView.removeFromSuperview()
             
@@ -63,7 +63,7 @@ class FCGameCardCollectionViewCell: UICollectionViewCell {
     private func createCardViewWithImage(imageName: String, tag: Int) -> UIImageView {
         let newCardImageView = UIImageView(frame: self.frame)
         newCardImageView.image = UIImage(named: imageName)
-        newCardImageView.contentMode = .scaleAspectFill
+        newCardImageView.contentMode = .scaleAspectFit
         newCardImageView.tag = tag
         return newCardImageView
     }
