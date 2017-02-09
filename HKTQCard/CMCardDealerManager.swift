@@ -13,7 +13,7 @@ let kMisMatchNotificationName = "MisMatchedNotification"
 let kMatchNotificationName = "MatchedNotification"
 let kGameEndNotificationName = "GameEndNotification"
 
-let kMaxPair = 9
+let kMaxPair = 4
 let kDelayTimeInSeconds = Double(1)
 let kCorrectPoints = 2
 let kIncorrectPoints = -1
@@ -46,7 +46,7 @@ class CMCardDealerManager {
         currentActiveChosenCardsIdx.removeAll()
         flippedCards.removeAll()
         
-        var totalCards = kMaxPair * 2
+        var totalCards = 9
         var gemCardCounter = 1
         var backCardCounter = 1
         
@@ -55,16 +55,14 @@ class CMCardDealerManager {
             var newCard1 = Card(valueFront: gemCardCounter, valueBack: backCardCounter)
             newCard1.cardId = backCardCounter
             currentActiveDeck.append(newCard1)
-            backCardCounter+=1
             
-            var newCard2 = Card(valueFront: gemCardCounter, valueBack: backCardCounter)
-            newCard2.cardId = backCardCounter
-            currentActiveDeck.append(newCard2)
             gemCardCounter+=1
-            totalCards-=2
+            
+            
+            totalCards-=1
         }
         
-        currentActiveDeck.shuffle()
+        //currentActiveDeck.shuffle()
         
         backCardCounter = 1
         for card in currentActiveDeck {
