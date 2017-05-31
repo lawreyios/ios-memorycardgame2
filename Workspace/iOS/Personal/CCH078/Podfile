@@ -1,0 +1,13 @@
+platform :ios, '9.0'
+
+target 'CCH078' do
+
+  use_frameworks!
+
+  # Pods for STB-iOS
+
+	pod 'SideMenu'  #https://github.com/jonkykong/SideMenu
+    pod 'Fabric'
+    pod 'Crashlytics'
+
+end

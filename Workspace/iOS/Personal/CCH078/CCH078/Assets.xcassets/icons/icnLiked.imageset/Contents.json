@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "idiom" : "iphone",
+      "filename" : "icnLiked.pdf"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  }
+}
