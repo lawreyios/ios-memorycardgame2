@@ -1,0 +1,379 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ABDD9DA81DA17453008B25F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDD9DA71DA17453008B25F8 /* AppDelegate.swift */; };
+		ABDD9DAF1DA17453008B25F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABDD9DAE1DA17453008B25F8 /* Assets.xcassets */; };
+		ABDD9DBD1DA17481008B25F8 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDD9DBB1DA17481008B25F8 /* Card.swift */; };
+		ABDD9DBE1DA17481008B25F8 /* PlayerScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDD9DBC1DA17481008B25F8 /* PlayerScore.swift */; };
+		ABDD9DC21DA17488008B25F8 /* CNPPopupController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABDD9DC11DA17488008B25F8 /* CNPPopupController.m */; };
+		ABDD9DC61DA1749A008B25F8 /* Array+Shuffle.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDD9DC31DA1749A008B25F8 /* Array+Shuffle.swift */; };
+		ABDD9DC71DA1749A008B25F8 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDD9DC41DA1749A008B25F8 /* Device.swift */; };
+		ABDD9DC81DA1749A008B25F8 /* CMCardDealerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDD9DC51DA1749A008B25F8 /* CMCardDealerManager.swift */; };
+		ABDD9DCC1DA174A2008B25F8 /* FCGameBoardCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDD9DC91DA174A2008B25F8 /* FCGameBoardCollectionViewController.swift */; };
+		ABDD9DCD1DA174A2008B25F8 /* FCGameCardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDD9DCA1DA174A2008B25F8 /* FCGameCardCollectionViewCell.swift */; };
+		ABDD9DCE1DA174A2008B25F8 /* FCGameCardCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABDD9DCB1DA174A2008B25F8 /* FCGameCardCollectionViewCell.xib */; };
+		ABDD9DD01DA174F3008B25F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABDD9DCF1DA174F3008B25F8 /* Main.storyboard */; };
+		ABFCBC701DA4023A00A1DE00 /* Vanilla.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ABFCBC6F1DA4023A00A1DE00 /* Vanilla.ttf */; };
+		ABFCBC721DA403F100A1DE00 /* Cubano-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = ABFCBC711DA403F100A1DE00 /* Cubano-Regular.otf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		ABDD9DA41DA17453008B25F8 /* LawreyMCGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LawreyMCGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABDD9DA71DA17453008B25F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ABDD9DAE1DA17453008B25F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ABDD9DB31DA17453008B25F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABDD9DBB1DA17481008B25F8 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		ABDD9DBC1DA17481008B25F8 /* PlayerScore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerScore.swift; sourceTree = "<group>"; };
+		ABDD9DBF1DA17487008B25F8 /* LawreyMCGame-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "LawreyMCGame-Bridging-Header.h"; path = "HKTQCard/LawreyMCGame-Bridging-Header.h"; sourceTree = "<group>"; };
+		ABDD9DC01DA17488008B25F8 /* CNPPopupController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNPPopupController.h; sourceTree = "<group>"; };
+		ABDD9DC11DA17488008B25F8 /* CNPPopupController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNPPopupController.m; sourceTree = "<group>"; };
+		ABDD9DC31DA1749A008B25F8 /* Array+Shuffle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Shuffle.swift"; sourceTree = "<group>"; };
+		ABDD9DC41DA1749A008B25F8 /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		ABDD9DC51DA1749A008B25F8 /* CMCardDealerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CMCardDealerManager.swift; sourceTree = "<group>"; };
+		ABDD9DC91DA174A2008B25F8 /* FCGameBoardCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FCGameBoardCollectionViewController.swift; sourceTree = "<group>"; };
+		ABDD9DCA1DA174A2008B25F8 /* FCGameCardCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FCGameCardCollectionViewCell.swift; sourceTree = "<group>"; };
+		ABDD9DCB1DA174A2008B25F8 /* FCGameCardCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FCGameCardCollectionViewCell.xib; sourceTree = "<group>"; };
+		ABDD9DCF1DA174F3008B25F8 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		ABFCBC6F1DA4023A00A1DE00 /* Vanilla.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Vanilla.ttf; sourceTree = "<group>"; };
+		ABFCBC711DA403F100A1DE00 /* Cubano-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cubano-Regular.otf"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ABDD9DA11DA17453008B25F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ABDD9D9B1DA17453008B25F8 = {
+			isa = PBXGroup;
+			children = (
+				ABDD9DBF1DA17487008B25F8 /* LawreyMCGame-Bridging-Header.h */,
+				ABF161051DBFA67800352B20 /* Fonts */,
+				ABDD9DA61DA17453008B25F8 /* HKTQCard */,
+				ABDD9DA51DA17453008B25F8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ABDD9DA51DA17453008B25F8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ABDD9DA41DA17453008B25F8 /* LawreyMCGame.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ABDD9DA61DA17453008B25F8 /* HKTQCard */ = {
+			isa = PBXGroup;
+			children = (
+				ABDD9DC01DA17488008B25F8 /* CNPPopupController.h */,
+				ABDD9DC11DA17488008B25F8 /* CNPPopupController.m */,
+				ABDD9DBA1DA1747A008B25F8 /* Helper */,
+				ABDD9DB91DA17473008B25F8 /* Model */,
+				ABDD9DA71DA17453008B25F8 /* AppDelegate.swift */,
+				ABDD9DCF1DA174F3008B25F8 /* Main.storyboard */,
+				ABDD9DC91DA174A2008B25F8 /* FCGameBoardCollectionViewController.swift */,
+				ABDD9DCA1DA174A2008B25F8 /* FCGameCardCollectionViewCell.swift */,
+				ABDD9DCB1DA174A2008B25F8 /* FCGameCardCollectionViewCell.xib */,
+				ABDD9DAE1DA17453008B25F8 /* Assets.xcassets */,
+				ABDD9DB31DA17453008B25F8 /* Info.plist */,
+			);
+			path = HKTQCard;
+			sourceTree = "<group>";
+		};
+		ABDD9DB91DA17473008B25F8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ABDD9DBB1DA17481008B25F8 /* Card.swift */,
+				ABDD9DBC1DA17481008B25F8 /* PlayerScore.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		ABDD9DBA1DA1747A008B25F8 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				ABDD9DC31DA1749A008B25F8 /* Array+Shuffle.swift */,
+				ABDD9DC41DA1749A008B25F8 /* Device.swift */,
+				ABDD9DC51DA1749A008B25F8 /* CMCardDealerManager.swift */,
+			);
+			name = Helper;
+			sourceTree = "<group>";
+		};
+		ABF161051DBFA67800352B20 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				ABFCBC6F1DA4023A00A1DE00 /* Vanilla.ttf */,
+				ABFCBC711DA403F100A1DE00 /* Cubano-Regular.otf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ABDD9DA31DA17453008B25F8 /* LawreyMCGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABDD9DB61DA17453008B25F8 /* Build configuration list for PBXNativeTarget "LawreyMCGame" */;
+			buildPhases = (
+				ABDD9DA01DA17453008B25F8 /* Sources */,
+				ABDD9DA11DA17453008B25F8 /* Frameworks */,
+				ABDD9DA21DA17453008B25F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LawreyMCGame;
+			productName = HKTQCard;
+			productReference = ABDD9DA41DA17453008B25F8 /* LawreyMCGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ABDD9D9C1DA17453008B25F8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "2359 Media Pte Ltd";
+				TargetAttributes = {
+					ABDD9DA31DA17453008B25F8 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = BXU3B85A8F;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = ABDD9D9F1DA17453008B25F8 /* Build configuration list for PBXProject "LawreyMCGame" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ABDD9D9B1DA17453008B25F8;
+			productRefGroup = ABDD9DA51DA17453008B25F8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ABDD9DA31DA17453008B25F8 /* LawreyMCGame */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ABDD9DA21DA17453008B25F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABDD9DAF1DA17453008B25F8 /* Assets.xcassets in Resources */,
+				ABDD9DCE1DA174A2008B25F8 /* FCGameCardCollectionViewCell.xib in Resources */,
+				ABFCBC721DA403F100A1DE00 /* Cubano-Regular.otf in Resources */,
+				ABFCBC701DA4023A00A1DE00 /* Vanilla.ttf in Resources */,
+				ABDD9DD01DA174F3008B25F8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ABDD9DA01DA17453008B25F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABDD9DC21DA17488008B25F8 /* CNPPopupController.m in Sources */,
+				ABDD9DA81DA17453008B25F8 /* AppDelegate.swift in Sources */,
+				ABDD9DCC1DA174A2008B25F8 /* FCGameBoardCollectionViewController.swift in Sources */,
+				ABDD9DC81DA1749A008B25F8 /* CMCardDealerManager.swift in Sources */,
+				ABDD9DBE1DA17481008B25F8 /* PlayerScore.swift in Sources */,
+				ABDD9DC71DA1749A008B25F8 /* Device.swift in Sources */,
+				ABDD9DC61DA1749A008B25F8 /* Array+Shuffle.swift in Sources */,
+				ABDD9DBD1DA17481008B25F8 /* Card.swift in Sources */,
+				ABDD9DCD1DA174A2008B25F8 /* FCGameCardCollectionViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		ABDD9DB41DA17453008B25F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		ABDD9DB51DA17453008B25F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ABDD9DB71DA17453008B25F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = BXU3B85A8F;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/HKTQCard/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lawrey.lawreymcgame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "fbc7d51e-5257-4ba0-aafd-6159d91cc1ed";
+				PROVISIONING_PROFILE_SPECIFIER = "Wildcard In House";
+				SWIFT_OBJC_BRIDGING_HEADER = "HKTQCard/LawreyMCGame-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		ABDD9DB81DA17453008B25F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: 2359 Media Pte Ltd";
+				DEVELOPMENT_TEAM = BXU3B85A8F;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/HKTQCard/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lawrey.lawreymcgame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "fbc7d51e-5257-4ba0-aafd-6159d91cc1ed";
+				PROVISIONING_PROFILE_SPECIFIER = "Wildcard In House";
+				SWIFT_OBJC_BRIDGING_HEADER = "HKTQCard/LawreyMCGame-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ABDD9D9F1DA17453008B25F8 /* Build configuration list for PBXProject "LawreyMCGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABDD9DB41DA17453008B25F8 /* Debug */,
+				ABDD9DB51DA17453008B25F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ABDD9DB61DA17453008B25F8 /* Build configuration list for PBXNativeTarget "LawreyMCGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABDD9DB71DA17453008B25F8 /* Debug */,
+				ABDD9DB81DA17453008B25F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ABDD9D9C1DA17453008B25F8 /* Project object */;
+}
