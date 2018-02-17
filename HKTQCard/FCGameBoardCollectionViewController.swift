@@ -46,7 +46,7 @@ class FCGameBoardCollectionViewController: UIViewController, UICollectionViewDel
         NotificationCenter.default.addObserver(self, selector: #selector(self.onMatch), name: NSNotification.Name(rawValue: kMatchNotificationName), object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(self.onGameEnd), name: NSNotification.Name(rawValue: kGameEndNotificationName), object: nil)
         collectionView.backgroundColor = UIColor.clear
-        btnReset.setTitle("Ready?", for: .normal)
+        //btnReset.setTitle("Ready?", for: .normal)
         
         //243,108,46
         
@@ -63,7 +63,7 @@ class FCGameBoardCollectionViewController: UIViewController, UICollectionViewDel
         lblGameover?.text = "Game Over"
         lblGameover?.attributedText = NSAttributedString(string: "Game Over", attributes: strokeTextAttributes)
         lblGameover?.alpha = 0
-        view.addSubview(lblGameover!)
+        //view.addSubview(lblGameover!)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -98,8 +98,8 @@ class FCGameBoardCollectionViewController: UIViewController, UICollectionViewDel
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if currentGameState == .NotPlaying {
             currentGameState = .Playing
-            startTimer()
-            btnReset.setTitle("Stop", for: .normal)
+            //startTimer()
+            //btnReset.setTitle("Stop", for: .normal)
         }
         if !cardManager.currentActiveChosenCardsIdx.contains(indexPath) && !cardManager.flippedCards.contains(indexPath){
             //showPopupWithStyle(.centered)

@@ -63,7 +63,7 @@ class FCGameCardCollectionViewCell: UICollectionViewCell {
     private func createCardViewWithImage(imageName: String, tag: Int) -> UIImageView {
         let newCardImageView = UIImageView(frame: self.frame)
         newCardImageView.image = UIImage(named: imageName)
-        newCardImageView.contentMode = .scaleAspectFill
+        newCardImageView.contentMode = .scaleAspectFit
         newCardImageView.tag = tag
         return newCardImageView
     }

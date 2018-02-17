@@ -13,7 +13,7 @@ let kMisMatchNotificationName = "MisMatchedNotification"
 let kMatchNotificationName = "MatchedNotification"
 let kGameEndNotificationName = "GameEndNotification"
 
-let kMaxPair = 9
+let kMaxPair = 8
 let kDelayTimeInSeconds = Double(1)
 let kCorrectPoints = 2
 let kIncorrectPoints = -1
@@ -64,6 +64,9 @@ class CMCardDealerManager {
             totalCards-=2
         }
         
+        currentActiveDeck.append(Card(valueFront: 9, valueBack: 17))
+        currentActiveDeck.append(Card(valueFront: 10                                                                                                                                                                                                                                                                                       , valueBack: 18))
+        
         currentActiveDeck.shuffle()
         
         backCardCounter = 1
@@ -78,19 +81,19 @@ class CMCardDealerManager {
     }
     
     func selectCard(card: Card, indexPath: IndexPath) {
-        if currentActiveChosenCards.count <= 1 {
-            let chosenCard = card
-            currentActiveChosenCards.append(chosenCard)
-            currentActiveChosenCardsIdx.append(indexPath)
-            flippedCards.append(indexPath)
-            if currentActiveChosenCards.count == 2 {
-                DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
-                    // your function here
-                    self.checkCards()
-                }
-
-            }
-        }
+//        if currentActiveChosenCards.count <= 1 {
+//            let chosenCard = card
+//            currentActiveChosenCards.append(chosenCard)
+//            currentActiveChosenCardsIdx.append(indexPath)
+//            flippedCards.append(indexPath)
+//            if currentActiveChosenCards.count == 2 {
+//                DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+//                    // your function here
+//                    self.checkCards()
+//                }
+//
+//            }
+//        }
     }
     
     // Card Result :

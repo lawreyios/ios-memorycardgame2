@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="eIG-Wf-OK4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13770" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="eIG-Wf-OK4">
+    <device id="ipad9_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13770"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,7 +21,7 @@
         <!--Game Board Collection View Controller-->
         <scene sceneID="Ezt-Cb-4fq">
             <objects>
-                <viewController storyboardIdentifier="FCGameBoardCollectionViewController" id="eIG-Wf-OK4" customClass="FCGameBoardCollectionViewController" customModule="HKTQCard" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FCGameBoardCollectionViewController" id="eIG-Wf-OK4" customClass="FCGameBoardCollectionViewController" customModule="LawreyMCGame" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="DZF-Ek-8mx"/>
                         <viewControllerLayoutGuide type="bottom" id="bc6-5R-Mmu"/>
@@ -27,8 +30,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tqbg" translatesAutoresizingMaskIntoConstraints="NO" id="AOm-ev-Eqv"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tqbg" translatesAutoresizingMaskIntoConstraints="NO" id="AOm-ev-Eqv">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                            </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="UZ2-PH-Wx8">
+                                <rect key="frame" x="82" y="164" width="851" height="566"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="566" id="9YK-07-rK3"/>
                                 </constraints>
@@ -44,23 +50,26 @@
                                     <outlet property="delegate" destination="eIG-Wf-OK4" id="A9D-Mi-bzn"/>
                                 </connections>
                             </collectionView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud" translatesAutoresizingMaskIntoConstraints="NO" id="FP7-un-m4R">
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud" translatesAutoresizingMaskIntoConstraints="NO" id="FP7-un-m4R">
+                                <rect key="frame" x="409" y="51" width="206" height="105"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="206" id="jhj-DJ-JQA"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="02:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zKd-0o-VEc">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="02:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zKd-0o-VEc">
+                                <rect key="frame" x="409" y="51" width="206" height="105"/>
                                 <fontDescription key="fontDescription" name="Vanilla" family="Vanilla" pointSize="32"/>
                                 <color key="textColor" red="0.95294117647058818" green="0.42352941176470588" blue="0.1803921568627451" alpha="1" colorSpace="deviceRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J9h-1u-rRc">
+                                <rect key="frame" x="830" y="20" width="156" height="94"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="156" id="AwM-Io-Fqx"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Cubano-Regular" family="Cubano" pointSize="36"/>
                                 <state key="normal" title="RESET">
-                                    <color key="titleColor" red="0.95294117649999999" green="0.42352941179999998" blue="0.18039215689999999" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="onReset:" destination="eIG-Wf-OK4" eventType="touchUpInside" id="n5S-S2-6vu"/>
